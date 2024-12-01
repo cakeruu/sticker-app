@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "./node_modules/semistandard/eslintrc.json",
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "rules": {
+    "camelcase": "off"
+  }
+}
