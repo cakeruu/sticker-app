@@ -61,7 +61,7 @@ export function Forum ({
 
   useEffect(() => {
     const client = new Client({
-      brokerURL: 'wss://nlbt2r6r-8080.uks1.devtunnels.ms/ws/websocket',
+      brokerURL: 'wss://18.193.120.116/ws/websocket',
       connectHeaders: {
         Authorization: `Bearer ${getTokenFromLocalStorage()}`
       },

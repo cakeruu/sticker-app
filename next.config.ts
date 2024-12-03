@@ -24,7 +24,7 @@ const nextConfig: NextConfig = {
       allowedOrigins: [
         'localhost:3000',
         '18.193.120.116',
-        '18.193.120.116:80'
+        '18.193.120.116:443'
       ]
     }
   },

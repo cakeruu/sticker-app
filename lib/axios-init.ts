@@ -2,7 +2,7 @@ import { getCookies } from '@/lib/server-utils';
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://18.193.120.116:80/api',
+  baseURL: 'https://18.193.120.116/api',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json'
