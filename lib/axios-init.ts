@@ -1,5 +1,6 @@
 import { getCookies } from '@/lib/server-utils';
 import axios from 'axios';
+import https from 'https';
 
 const api = axios.create({
   baseURL: 'https://18.193.120.116/api',
@@ -7,7 +8,10 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json'
   },
-  withCredentials: true
+  withCredentials: true,
+  httpsAgent: new https.Agent({
+    rejectUnauthorized: false
+  })
 });
 
 api.interceptors.response.use(
