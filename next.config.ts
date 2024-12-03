@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Access-Control-Allow-Origin',
-            value: '18.193.120.116' // Your API domain
+            value: 'ec2-18-193-120-116.eu-central-1.compute.amazonaws.com' // Your API domain
           }
         ]
       }
@@ -23,8 +23,8 @@ const nextConfig: NextConfig = {
       // edit: updated to new key. Was previously `allowedForwardedHosts`
       allowedOrigins: [
         'localhost:3000',
-        '18.193.120.116',
-        '18.193.120.116:443'
+        'ec2-18-193-120-116.eu-central-1.compute.amazonaws.com',
+        'ec2-18-193-120-116.eu-central-1.compute.amazonaws.com:443'
       ]
     }
   },
