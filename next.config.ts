@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Access-Control-Allow-Origin',
-            value: 'nlbt2r6r-8080.uks1.devtunnels.ms' // Your API domain
+            value: '18.193.120.116' // Your API domain
           }
         ]
       }
@@ -23,8 +23,8 @@ const nextConfig: NextConfig = {
       // edit: updated to new key. Was previously `allowedForwardedHosts`
       allowedOrigins: [
         'localhost:3000',
-        'nlbt2r6r-3000.uks1.devtunnels.ms',
-        'nlbt2r6r-3000.uks1.devtunnels.ms:3000'
+        '18.193.120.116',
+        '18.193.120.116:80'
       ]
     }
   },
