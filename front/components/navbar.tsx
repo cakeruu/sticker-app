@@ -12,6 +12,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useGetTokenFromLocalStorage } from '@/lib/hooks';
+import SignOutButton from './signout-button';
 
 export default function Navbar () {
   const token = useGetTokenFromLocalStorage();
@@ -81,6 +82,7 @@ export default function Navbar () {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+          <SignOutButton />
         </div>
 
         {/* Mobile Menu */}
@@ -123,6 +125,7 @@ export default function Navbar () {
               <Button onClick={() => setTheme('dark')} variant='ghost' className='justify-start'>
                 Dark Mode
               </Button>
+              <SignOutButton />
             </div>
           </SheetContent>
         </Sheet>
