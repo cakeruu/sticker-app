@@ -21,11 +21,13 @@ A digital sticker album collection platform where users can create albums, colle
 ![Available Albums](front/public/albums.png)
 ![My Albums](front/public/my-albums.png)
 ![Collections](front/public/colletions.png)
+![Colletion Example](front/public/a-collection.png)
 ![Album Example](front/public/album-example.png)
 
 ### Community Features
 ![My Forums](front/public/my-forums.png)
 ![Forum Chat](front/public/forum-chat.png)
+![Direct Message](front/public/direct-messages.png)
 
 ## Tech Stack
 
@@ -140,12 +142,13 @@ pnpm run start
 
 **Primary Account:**
 
-Email: john.doe@example.com
+Email: acanals03@gmail.com
 Password: 123456
+
 
 **Secondary Account (for testing real-time messaging):**
 
-Email: jane.doe@example.com
+Email: john.doe@example.com
 Password: 123456
 
 
@@ -163,3 +166,4 @@ For any questions or issues, feel free to contact at:
 ```
 acanalsm@edu.tecnocampus.cat
 ```
+
