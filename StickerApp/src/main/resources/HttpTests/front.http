@@ -18,9 +18,9 @@ Content-Type: application/json
 
 {
   "password": "123456",
-  "name": "Aleix",
-  "secondName": "Canals",
-  "email": "acanals03@gmail.com",
+  "name": "Jane",
+  "secondName": "Doe",
+  "email": "jane.doe@example.com",
   "dateOfBirth": "1990-05-15T00:00:00",
   "role": "PREMIUM"
 }

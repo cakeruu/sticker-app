@@ -21,6 +21,7 @@ A digital sticker album collection platform where users can create albums, colle
 ![Available Albums](front/public/albums.png)
 ![My Albums](front/public/my-albums.png)
 ![Collections](front/public/colletions.png)
+![Colletion Example](front/public/a-collection.png)
 ![Album Example](front/public/album-example.png)
 
 ### Community Features
