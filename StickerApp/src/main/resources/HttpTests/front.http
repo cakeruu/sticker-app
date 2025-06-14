@@ -1,0 +1,124 @@
+@token = eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0ZSRUUiXSwiZW1haWwiOiJhY2FuYWxzMDNAZ21haWwuY29tIiwiaWQiOiIxIiwidXNlcl9mdWxsX25hbWUiOiJBbGVpeCBDYW5hbHMiLCJzdWIiOiJhY2FuYWxzMDNAZ21haWwuY29tIiwiaWF0IjoxNzMxMzAyNzg5LCJleHAiOjE3MzEzODkxODl9.FWLSBWBa4bGsIfNnyjL6BHPhSUDLXxKIfzj2NLheUAw
+### Create a new member
+POST http://localhost:8080/api/auth/members
+Content-Type: application/json
+
+{
+  "password": "123456",
+  "name": "John",
+  "secondName": "Doe",
+  "email": "john.doe@example.com",
+  "dateOfBirth": "1990-05-15T00:00:00",
+  "role": "ADMIN"
+}
+
+### Create a new member (2)
+POST http://localhost:8080/api/auth/members
+Content-Type: application/json
+
+{
+  "password": "123456",
+  "name": "Aleix",
+  "secondName": "Canals",
+  "email": "acanals03@gmail.com",
+  "dateOfBirth": "1990-05-15T00:00:00",
+  "role": "PREMIUM"
+}
+
+### Create a new member (2)
+POST http://localhost:8080/api/auth/members
+Content-Type: application/json
+
+{
+  "password": "123456",
+  "name": "Adri",
+  "secondName": "Ortega",
+  "email": "adri@gmail.com",
+  "dateOfBirth": "1990-05-15T00:00:00",
+  "role": "PREMIUM"
+}
+
+### Login a member
+POST http://localhost:8080/api/auth/members/login
+Content-Type: application/json
+
+{
+  "email": "john.doe@example.com",
+  "password": "123456"
+}
+
+### Create a new active album
+POST http://localhost:8080/api/albums?memberId
+Content-Type: application/json
+
+{
+  "name": "Album de la liga",
+  "beginningDate": "2024-10-23T00:00:00",
+  "endingDate": "2027-10-26T00:00:00",
+  "editor": "FIFA",
+  "isPublic": true,
+  "sections": [
+    {
+      "name": "Sports",
+      "stickers": [
+        {
+          "number": 10,
+          "name": "Messi",
+          "description": "A sticker of a famous football player.",
+          "image": "https://t.ly/MPvcy"
+        },
+        {
+          "number": 23,
+          "name": "Kobe",
+          "description": "A sticker of a legendary basketball player.",
+          "image": "https://t.ly/LZY6x"
+        }
+      ]
+    },
+    {
+      "name": "Nature",
+      "stickers": [
+        {
+          "number": 1,
+          "name": "Mountain View",
+          "description": "A sticker of a beautiful mountain view.",
+          "image": "https://t.ly/u40Zi"
+        }
+      ]
+    }
+  ]
+}
+
+### Register a forum member
+POST http://localhost:8080/api/forums/1/register-member
+
+### Register a forum member
+POST http://localhost:8080/api/forums/1/register-member?memberId=3
+
+### Send a message to a forum
+POST http://localhost:8080/api/forums/messages
+Content-Type: application/json
+
+{
+  "forumId": 1,
+  "memberId": 1,
+  "message": "Hello, everyone!"
+}
+
+### Send a message to a member
+POST http://localhost:8080/api/members/forum=1/message
+Content-Type: application/json
+
+{
+  "receiverId": 2,
+  "content": "Hello dude!"
+}
+
+### Send a message to a member
+POST http://localhost:8080/api/members/forum=1/message?memberId=2
+Content-Type: application/json
+
+{
+  "receiverId": 3,
+  "content": "Hola!"
+}

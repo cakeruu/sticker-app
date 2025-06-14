@@ -1,0 +1,26 @@
+### Collect a sticker into a member's collection
+POST http://localhost:8080/api/members/collection=1/sticker=1?memberId=2
+Accept: application/json
+
+### Create a new sale offer
+POST http://localhost:8080/api/sale-offer?memberId=2
+Accept: application/json
+Content-Type: application/json
+
+{
+  "collectionId": 1,
+  "stickerId": 1,
+  "price": 1000.0
+}
+
+### Get all sale offers from a member
+GET http://localhost:8080/api/sale-offer?memberId=2
+
+### Request to buy a sticker
+POST http://localhost:8080/api/sale-offer/1/request
+
+### Accept a sale offer
+PUT http://localhost:8080/api/sale-offer/1/accept/1?memberId=2
+
+### Reject a sale offer
+PUT http://localhost:8080/api/sale-offer/1/reject/1?memberId=2

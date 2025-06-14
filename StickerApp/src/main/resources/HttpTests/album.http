@@ -1,0 +1,114 @@
+@token = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huLmRvZUBleGFtcGxlLmNvbSIsImlhdCI6MTczMDgyOTMxOCwiZXhwIjoxNzMwOTE1NzE4fQ.CdDnRtmxBKNd4Pm-cTaH8zQF7DysCF0ccS7uagkD9bQ
+
+### Create a new active album
+POST http://localhost:8080/api/albums
+Content-Type: application/json
+
+{
+  "name": "My New Album",
+  "beginningDate": "2024-10-23T00:00:00",
+  "endingDate": "2027-10-26T00:00:00",
+  "editor": "Johny the Editor!",
+  "isPublic": true,
+  "sections": [
+    {
+      "name": "Sports",
+      "stickers": [
+        {
+          "number": 10,
+          "name": "Messi",
+          "description": "A sticker of a famous football player.",
+          "image": "https://t.ly/MPvcy"
+        },
+        {
+          "number": 23,
+          "name": "Kobe",
+          "description": "A sticker of a legendary basketball player.",
+          "image": "https://t.ly/LZY6x"
+        }
+      ]
+    },
+    {
+      "name": "Nature",
+      "stickers": [
+        {
+          "number": 1,
+          "name": "Mountain View",
+          "description": "A sticker of a beautiful mountain view.",
+          "image": "https://t.ly/u40Zi"
+        }
+      ]
+    }
+  ]
+}
+
+### Create a new inactive album
+POST http://localhost:8080/api/albums
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "My New Album",
+  "beginningDate": "2024-10-26T00:00:00",
+  "endingDate": "2024-10-26T00:59:15",
+  "editor": "Johny the Editor!",
+  "ownerId": 1,
+  "isPublic": true,
+  "sections": [
+    {
+      "name": "Sports",
+      "stickers": [
+        {
+          "number": 10,
+          "name": "Messi",
+          "description": "A sticker of a famous football player.",
+          "image": "https://t.ly/MPvcy"
+        },
+        {
+          "number": 23,
+          "name": "Kobe",
+          "description": "A sticker of a legendary basketball player.",
+          "image": "https://t.ly/LZY6x"
+        }
+      ]
+    },
+    {
+      "name": "Nature",
+      "stickers": [
+        {
+          "number": 1,
+          "name": "Mountain View",
+          "description": "A sticker of a beautiful mountain view.",
+          "image": "https://t.ly/u40Zi"
+        }
+      ]
+    }
+  ]
+}
+
+### Get all albums
+GET http://localhost:8080/api/albums
+Accept: application/json
+
+### Get all albums from a member
+GET http://localhost:8080/api/albums/member
+Authorization: Bearer {{token}}
+Accept: application/json
+
+### Get a specific album by ID
+GET http://localhost:8080/api/albums/1
+Authorization: Bearer {{token}}
+Accept: application/json
+
+### Get available albums
+GET http://localhost:8080/api/albums/available
+Accept: application/json
+
+### Get album details
+GET http://localhost:8080/api/albums/1/details
+Authorization: Bearer {{token}}
+
+### Change the visibility of an album
+PUT http://localhost:8080/api/albums/1/isPublic=true
+Authorization: Bearer {{token}}
+Accept: application/json

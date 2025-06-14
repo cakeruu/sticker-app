@@ -1,0 +1,36 @@
+@token = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huLmRvZUBleGFtcGxlLmNvbSIsImlhdCI6MTczMDgyOTMxOCwiZXhwIjoxNzMwOTE1NzE4fQ.CdDnRtmxBKNd4Pm-cTaH8zQF7DysCF0ccS7uagkD9bQ
+
+### Register a forum member
+POST http://localhost:8080/api/forums/1/register-member
+Authorization: Bearer {{token}}
+
+
+### Unregister a forum member
+POST http://localhost:8080/api/forums/1/unregister-member
+Authorization: Bearer {{token}}
+
+
+### Get all messages from a forum with a period
+GET http://localhost:8080/api/forums/1/messages?days=1&hours=5&minutes=30&seconds=45
+
+
+### Send a message to a forum
+POST http://localhost:8080/api/forums/messages
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "forumId": 1,
+  "message": "Hello, everyone!"
+}
+
+### Get all members from a forum
+GET http://localhost:8080/api/forums/1/members
+Authorization: Bearer {{token}}
+
+
+### Get forum by id
+GET http://localhost:8080/api/forums/1
+Authorization: Bearer {{token}}
+
+

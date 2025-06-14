@@ -1,0 +1,25 @@
+@token = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huLmRvZUBleGFtcGxlLmNvbSIsImlhdCI6MTczMDgyOTMxOCwiZXhwIjoxNzMwOTE1NzE4fQ.CdDnRtmxBKNd4Pm-cTaH8zQF7DysCF0ccS7uagkD9bQ
+
+### Get all collections from a member
+GET http://localhost:8080/api/members/collections
+Accept: application/json
+
+### Add a new collection to a member
+POST http://localhost:8080/api/members/collections/1?memberId=2
+Accept: application/json
+
+### Get all collectors for an album
+GET http://localhost:8080/api/collections/album=1/collectors
+Accept: application/json
+
+### Get all active collections of a member
+GET http://localhost:8080/api/members/collections/active?memberId=2
+Accept: application/json
+
+### Collect a sticker into a member's collection
+POST http://localhost:8080/api/members/collection=1/sticker=1?memberId=2
+Accept: application/json
+
+### Check stickers collected from an album by a member
+GET http://localhost:8080/api/members/collection=1/stickers?memberId=2
+

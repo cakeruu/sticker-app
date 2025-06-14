@@ -1,0 +1,12 @@
+{
+  "defaultConfig": {
+    "period": 604800,
+    "maxAge": 30,
+    "token_exp": 86400000
+  },
+  "production": {
+    "period": 40,
+    "maxAge": 60,
+    "token_exp": 86400000
+  }
+}

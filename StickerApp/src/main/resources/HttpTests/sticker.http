@@ -1,0 +1,3 @@
+### Get sticker by number from a specific album
+GET http://localhost:8080/api/stickers/10/album=2
+Accept: application/json

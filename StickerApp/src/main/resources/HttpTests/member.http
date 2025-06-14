@@ -1,0 +1,281 @@
+@token = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huLmRvZUBleGFtcGxlLmNvbSIsImlhdCI6MTczMTI5MDg2MiwiZXhwIjoxNzMxMzc3MjYyfQ.x2kZUyP6c_P-qTB7fh6a6eKR44YaiIYVMPOgCPMuyYs
+### Create a new member
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "John",
+  "secondName": "Doe",
+  "email": "john.doe@example.com",
+  "dateOfBirth": "1990-05-15T00:00:00"
+}
+### Create a new member (2)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+"password": "securePassword123",
+"name": "Bob",
+"secondName": "Alfred",
+"email": "john.dos@example.com",
+"dateOfBirth": "1990-05-15T00:00:00"
+}
+
+### Create a new member (3)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Joe",
+  "secondName": "Smith",
+  "email": "joe.smith@example.com",
+  "dateOfBirth": "1990-05-15T00:00:00"
+}
+
+### Create a new member (4)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Alice",
+  "secondName": "Johnson",
+  "email": "alice.johnson@example.com",
+  "dateOfBirth": "1985-07-20T00:00:00"
+}
+
+### Create a new member (5)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Charlie",
+  "secondName": "Brown",
+  "email": "charlie.brown@example.com",
+  "dateOfBirth": "1992-11-30T00:00:00"
+}
+
+### Create a new member (6)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Diana",
+  "secondName": "Prince",
+  "email": "diana.prince@example.com",
+  "dateOfBirth": "1988-03-10T00:00:00"
+}
+
+### Create a new member (7)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Eve",
+  "secondName": "Adams",
+  "email": "eve.adams@example.com",
+  "dateOfBirth": "1995-09-25T00:00:00"
+}
+### Create a new member (8)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Frank",
+  "secondName": "Miller",
+  "email": "frank.miller@example.com",
+  "dateOfBirth": "1987-04-22T00:00:00"
+}
+
+### Create a new member (9)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Grace",
+  "secondName": "Hopper",
+  "email": "grace.hopper@example.com",
+  "dateOfBirth": "1991-12-09T00:00:00"
+}
+
+### Create a new member (10)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Hank",
+  "secondName": "Pym",
+  "email": "hank.pym@example.com",
+  "dateOfBirth": "1989-06-17T00:00:00"
+}
+
+### Create a new member (11)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Ivy",
+  "secondName": "Green",
+  "email": "ivy.green@example.com",
+  "dateOfBirth": "1993-08-25T00:00:00"
+}
+
+### Create a new member (12)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Jack",
+  "secondName": "White",
+  "email": "jack.white@example.com",
+  "dateOfBirth": "1990-10-05T00:00:00"
+}
+
+### Create a new member (13)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Karen",
+  "secondName": "Black",
+  "email": "karen.black@example.com",
+  "dateOfBirth": "1986-02-14T00:00:00"
+}
+
+### Create a new member (14)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Leo",
+  "secondName": "King",
+  "email": "leo.king@example.com",
+  "dateOfBirth": "1992-03-30T00:00:00"
+}
+
+### Create a new member (15)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Mona",
+  "secondName": "Lisa",
+  "email": "mona.lisa@example.com",
+  "dateOfBirth": "1988-11-11T00:00:00"
+}
+
+### Create a new member (16)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Nina",
+  "secondName": "Simone",
+  "email": "nina.simone@example.com",
+  "dateOfBirth": "1994-07-07T00:00:00"
+}
+
+### Create a new member (17)
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "password": "securePassword123",
+  "name": "Oscar",
+  "secondName": "Wilde",
+  "email": "oscar.wilde@example.com",
+  "dateOfBirth": "1985-01-19T00:00:00"
+}
+
+### Get All Members Asc
+GET http://localhost:8080/api/members
+
+### Get All Members Desc
+GET http://localhost:8080/api/members?sort=desc
+
+### Get All Members From a Specific Period (in days)
+GET http://localhost:8080/api/members/recent?days=1
+
+### Get All Members From a Specific Period (in hours)
+GET http://localhost:8080/api/members/recent?hours=30
+Authorization: Bearer {{token}}
+
+### Get All Members From a Specific Period (in minutes)
+GET http://localhost:8080/api/members/recent?minutes=30
+Authorization: Bearer {{token}}
+
+### Get All Members From a Specific Period (in seconds)
+GET http://localhost:8080/api/members/recent?seconds=30
+Authorization: Bearer {{token}}
+
+### Get All Members From a Specific Period (in hours and minutes)
+GET http://localhost:8080/api/members/recent?hours=1&minutes=30
+Authorization: Bearer {{token}}
+
+### Get a member info
+GET http://localhost:8080/api/members/profile?memberId=2
+
+### Update Member Profile
+PUT http://localhost:8080/api/members/1/profile
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Updated Name",
+  "secondName": "Updated SecondName",
+  "email": "updated.email@example.com",
+  "password": "newPassword123",
+  "dateOfBirth": "1990-01-01T00:00:00"
+}
+
+### Send a message to a member
+POST http://localhost:8080/api/members/forum=1/message
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "receiverId": 2,
+  "content": "Hello dude!"
+}
+
+### Mark a forum message as read
+POST http://localhost:8080/api/members/forum=1/read-message/1
+Authorization: Bearer {{token}}
+
+### Get all unread messages from a forum
+GET http://localhost:8080/api/members/forum=1/unread-forum-messages
+Authorization: Bearer {{token}}
+
+### Mark a direct message as read
+POST http://localhost:8080/api/members/forum=1/read-direct-message/1
+Authorization: Bearer {{token}}
+
+### Get all unread messages from a direct message
+GET http://localhost:8080/api/members/forum=1/unread-direct-messages
+Authorization: Bearer {{token}}
+
+### Get all forums of a member
+GET http://localhost:8080/api/members/forums
+Authorization: Bearer {{token}}
+
+### Block a user
+POST http://localhost:8080/api/members/block/other-member=2
+Authorization: Bearer {{token}}
+
+### Unblock a user
+POST http://localhost:8080/api/members/unblock/other-member=2
+Authorization: Bearer {{token}}
