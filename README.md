@@ -11,6 +11,22 @@ A digital sticker album collection platform where users can create albums, colle
 - **Real-time Messaging**: Chat with other users in real-time
 - **User Management**: Profile management, user blocking, and authentication
 
+## Screenshots
+
+### Login & Dashboard
+![Login](front/public/login.png)
+![Home Dashboard](front/public/home.png)
+
+### Albums & Collections
+![Available Albums](front/public/albums.png)
+![My Albums](front/public/my-albums.png)
+![Collections](front/public/colletions.png)
+![Album Example](front/public/album-example.png)
+
+### Community Features
+![My Forums](front/public/my-forums.png)
+![Forum Chat](front/public/forum-chat.png)
+
 ## Tech Stack
 
 - **Backend**: Spring Boot (Java 17), H2 Database, WebSocket
