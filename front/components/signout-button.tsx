@@ -9,6 +9,7 @@ export default function SignOutButton () {
 
   async function handleSignOut () {
     await signOutAction();
+    window.localStorage.removeItem('token');
     router.push('/auth/login');
   }
 

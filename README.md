@@ -27,6 +27,7 @@ A digital sticker album collection platform where users can create albums, colle
 ### Community Features
 ![My Forums](front/public/my-forums.png)
 ![Forum Chat](front/public/forum-chat.png)
+![Direct Message](front/public/direct-messages.png)
 
 ## Tech Stack
 
