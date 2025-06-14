@@ -142,13 +142,12 @@ pnpm run start
 
 **Primary Account:**
 
-Email: acanals03@gmail.com
+Email: john.doe@example.com
 Password: 123456
-
 
 **Secondary Account (for testing real-time messaging):**
 
-Email: john.doe@example.com
+Email: jane.doe@example.com
 Password: 123456
 
 
